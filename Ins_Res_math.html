@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+
+<div data-ng-app ="" data-ng-init="number1=0; number2=0; quantity=0;price=0" >
+<h5> Input numbers in Below to get Instant sum : </h5>
+Number1: <input type="number" ng-model="number1"> </br>
+Number2: <input type="number" ng-model="number2">
+
+<p> Its sum of previous two input value: {{ number1 ++ number2 }}</p>
+
+<h5>Cost Calculator</h5>
+Quantity: <input type="number" ng-model="quantity">
+Price: <input type="number" ng-model="price">
+
+<p><b>Total:</b> {{quantity * price}}</p>
+
+
+<button onclick="document.location = 'Index.html'">Go Home Page</button>
+
+</body>
+</html>
